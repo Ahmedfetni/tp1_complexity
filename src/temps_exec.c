@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <time.h>
 #include "temps_exec.h"
 #include "algo.h"
@@ -13,7 +14,7 @@ int longeur_5[] = {17393, 17401, 17417, 17419, 17431, 17443, 17449, 17467, 17471
 int longeur_6[] ={104459, 104471, 104473, 104479, 104491, 104513, 104527, 104537, 104543, 104549, 104551, 104561 ,104579, 104593, 104597, 104623, 104639, 104651, 104659, 104677,};
 
 int longeur_7[] ={1034233, 1034237, 1034239, 1034249, 1034251, 1034281, 1034309, 1034317, 1034323, 1034339, 1034353, 1034357, 1034359, 1034381, 1034387, 1034419, 1034443, 1034461, 1034477, 1034479, };
-
+int**les_chiffres = {longeur_1_2,longeur_3,longeur_4,longeur_5,longeur_6,longeur_7};
 double temps(int (*f)(int), int valeur){
     
     clock_t t1, t2 ;
@@ -25,4 +26,20 @@ double temps(int (*f)(int), int valeur){
     t2 = clock();
     
     return (double) (t2-t1)/CLOCKS_PER_SEC ;
+}
+
+/*le temps pour algo 2 */
+void mesurer_le_temps_algo1()
+{
+    printf("les nombre premier");
+    for (size_t i = 0; i < 20; i++)
+    {
+    
+    }
+    
+    for (int  i = 1; i < 6; i++)
+    {
+        
+    }
+    
 }

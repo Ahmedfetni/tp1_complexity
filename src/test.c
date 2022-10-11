@@ -10,7 +10,7 @@ void tester()
     printf("********************\n");
     for (int i = 0; i <31 ; i++)
     {
-        char* message = algorithme1(bigprimes[i]) ? "\033[0;32m est primaire \033[0m":"\033[0;31m non primaire  \033[0m";
+        char* message = algorithme1(bigprimes[i]) ? "\033[0;32m est premier \033[0m":"\033[0;31m non premier \033[0m";
         printf("%d %s\n", bigprimes[i], message);
     }
     
@@ -18,7 +18,7 @@ void tester()
     printf("********************\n");
     for (int i = 0; i <31 ; i++)
     {
-        char* message = algorithme2(bigprimes[i]) ? "\033[0;32m est primaire  \033[0m":"\033[0;31m non primaire  \033[0m";
+        char* message = algorithme2(bigprimes[i]) ? "\033[0;32m est premier  \033[0m":"\033[0;31m non premier  \033[0m";
         printf("%d %s\n", bigprimes[i], message);
     }
 
@@ -26,7 +26,7 @@ void tester()
     printf("********************\n");
     for (int i = 0; i <31 ; i++)
     {
-        char* message = algorithme3(bigprimes[i]) ? "\033[0;32m est primaire   \033[0m":"\033[0;31m non primaire  \033[0m";
+        char* message = algorithme3(bigprimes[i]) ? "\033[0;32m est premier   \033[0m":"\033[0;31m non premier  \033[0m";
         printf("%d %s\n", bigprimes[i], message);
     }
 
@@ -34,7 +34,7 @@ void tester()
     printf("********************\n");
     for (int i = 0; i <31 ; i++)
     {
-        char* message = algorithme4(bigprimes[i]) ? "\033[0;32m est primaire  \033[0m":"\033[0;31m non primaire \033[0m";
+        char* message = algorithme4(bigprimes[i]) ? "\033[0;32m est premier  \033[0m":"\033[0;31m non premier \033[0m";
         printf("%d %s\n", bigprimes[i], message);
     }
 
@@ -42,7 +42,7 @@ void tester()
     printf("********************\n");
     for (int i = 0; i <31 ; i++)
     {
-        char* message = algorithme5(bigprimes[i]) ? "\033[0;32m est primaire   \033[0m":"\033[0;31m non primaire \033[0m";
+        char* message = algorithme5(bigprimes[i]) ? "\033[0;32m est premier   \033[0m":"\033[0;31m non premier \033[0m";
         printf("%d %s\n", bigprimes[i], message);
     }
 
@@ -50,7 +50,7 @@ void tester()
     printf("********************\n");
     for (int i = 0; i <31 ; i++)
     {
-        char* message = algorithme6(bigprimes[i]) ? "\033[0;32m est primaire   \033[0m":"\033[0;31m non primaire \033[0m";
+        char* message = algorithme6(bigprimes[i]) ? "\033[0;32m est premier   \033[0m":"\033[0;31m non premier \033[0m";
         printf("%d %s\n", bigprimes[i], message);
     }
 }
