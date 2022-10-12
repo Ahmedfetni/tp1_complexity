@@ -1,9 +1,10 @@
-#include "algo.h"
 #include <math.h>
+#include "algo.h"
 
-int algorithme1(int entier)
+
+long int algorithme1(long int entier)
 {
-    int i = 2;
+    long int i = 2;
     while (i < entier)
     {
         if( entier % i == 0)
@@ -17,9 +18,9 @@ int algorithme1(int entier)
     return 1;
 }
 
-int algorithme2(int entier)
+long int algorithme2(long int entier)
 {
-    int i = 2;
+    long int i = 2;
     while (i <= entier/2)
     {
         if( entier % i == 0)
@@ -33,12 +34,12 @@ int algorithme2(int entier)
     return 1;
 }
 
-int algorithme3(int entier)
+long int algorithme3(long int entier)
 {
     if (entier !=  2 && entier % 2 == 0)
         return 0;
     
-    int i = 3;
+    long int i = 3;
     while (i <= entier-2)
     {
         if( entier % i == 0)
@@ -52,12 +53,12 @@ int algorithme3(int entier)
     return 1;
 }
 
-int algorithme4(int entier)
+long int algorithme4(long int entier)
 {
     if (entier !=  2 && entier % 2 == 0)
         return 0;
     
-    int i = 3;
+    long int i = 3;
     while (i <= entier/2)
     {
         if( entier % i == 0)
@@ -71,9 +72,9 @@ int algorithme4(int entier)
     return 1;
 }
 
-int algorithme5(int entier)
+long int algorithme5(long int entier)
 {
-    int i = 2;
+    long int i = 2;
     double racine = sqrt(entier); 
     while (i <= racine)
     {
@@ -88,12 +89,12 @@ int algorithme5(int entier)
     return 1;
 }
 
-int algorithme6(int entier)
+long int algorithme6(long int entier)
 {
     if (entier !=  2 && entier % 2 == 0)
         return 0;
     
-    int i = 3;
+    long int i = 3;
     double racine = sqrt(entier); 
     while (i <= racine)
     {
