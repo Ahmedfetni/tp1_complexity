@@ -83,7 +83,7 @@ double temps(long int (*f)(long int),long int valeur)
 /*le temps pour algo 1  avec 20 nombre de longeurs de 1-2 jusqu"à 16  */
 void mesurer_le_temps_algo1()
 {
-    printf("l'algorithme 1:\n");
+    printf("\nl'algorithme 1:\n");
     printf("\npour les nombres premier longeur 1 et 2\n");
     for (int  i = 0; i < 20; i++)
     {
@@ -116,17 +116,72 @@ void mesurer_le_temps_algo1()
 
     printf("\npour les nombre premier longeur 7\n");
     for (int  i = 0; i < 20; i++)
-   {
+    {
         printf("%fms\t ", temps(algorithme1,longeur_7[i])*1000);
         //printf("%ld\n",longeur_7[0]);
     }
+    printf("\npour les nombre premier longeur 8\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme1,longeur_8[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 9\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme1,longeur_9[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 10\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme1,longeur_10[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }printf("\npour les nombre premier longeur 11\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme1,longeur_11[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 12\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme1,longeur_12[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 13\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme1,longeur_13[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 14\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme1,longeur_14[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 15\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme1,longeur_15[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 16\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme1,longeur_16[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    
+
         printf("\n");
 }
 
 /*le temps pour algo 2 avec 20 nombre de longeurs de 1-2 jusqu"à 16 */
 void mesurer_le_temps_algo2()
 {
-    printf("l'algorithme 2:\n");
+    printf("\nl'algorithme 2:\n");
     printf("\npour les nombres premier longeur 1 et 2\n");
     for (int  i = 0; i < 20; i++)
     {
@@ -162,13 +217,66 @@ void mesurer_le_temps_algo2()
     {
         printf("%fms\t ", temps(algorithme2,longeur_7[i])*1000);
     }
+    printf("\npour les nombre premier longeur 8\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme2,longeur_8[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 9\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme2,longeur_9[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 10\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme2,longeur_10[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }printf("\npour les nombre premier longeur 11\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme2,longeur_11[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 12\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme2,longeur_12[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 13\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme2,longeur_13[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 14\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme2,longeur_14[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 15\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme2,longeur_15[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 16\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme2,longeur_16[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
         printf("\n");
 }
 
 /*le temps pour algo 3 avec 20 nombre de longeurs de 1-2 jusqu"à 16 */
 void mesurer_le_temps_algo3()
 {
-    printf("l'algorithme 3:\n");
+    printf("\nl'algorithme 3:\n");
     printf("\npour les nombres premier longeur 1 et 2\n");
     for (int  i = 0; i < 20; i++)
     {
@@ -204,12 +312,65 @@ void mesurer_le_temps_algo3()
     {
         printf("%fms\t ", temps(algorithme3,longeur_7[i])*1000);
     }
+    printf("\npour les nombre premier longeur 8\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme3,longeur_8[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 9\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme3,longeur_9[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 10\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme3,longeur_10[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }printf("\npour les nombre premier longeur 11\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme3,longeur_11[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 12\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme3,longeur_12[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 13\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme3,longeur_13[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 14\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme3,longeur_14[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 15\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme3,longeur_15[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 16\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme3,longeur_16[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
         printf("\n");
 }
 /*le temps pour algo 4 avec 20 nombre de longeurs de 1-2 jusqu"à 16 */
 void mesurer_le_temps_algo4()
 {
-    printf("l'algorithme 4:\n");
+    printf("\nl'algorithme 4:\n");
     printf("\npour les nombres premier longeur 1 et 2\n");
     for (int  i = 0; i < 20; i++)
     {
@@ -244,13 +405,65 @@ void mesurer_le_temps_algo4()
     for (int  i = 0; i < 20; i++)
     {
         printf("%fms\t ", temps(algorithme4,longeur_7[i])*1000);
+    }printf("\npour les nombre premier longeur 8\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme4,longeur_8[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 9\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme4,longeur_9[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 10\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme4,longeur_10[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }printf("\npour les nombre premier longeur 11\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme4,longeur_11[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 12\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme4,longeur_12[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 13\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme4,longeur_13[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 14\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme4,longeur_14[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 15\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme4,longeur_15[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 16\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme4,longeur_16[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
     }
         printf("\n");
 }
 /*le temps pour algo 5 avec 20 nombre de longeurs de 1-2 jusqu"à 16 */
 void mesurer_le_temps_algo5()
 {
-    printf("l'algorithme 5:\n");
+    printf("\nl'algorithme 5:\n");
     printf("\npour les nombres premier longeur 1 et 2\n");
     for (int  i = 0; i < 20; i++)
     {
@@ -286,13 +499,66 @@ void mesurer_le_temps_algo5()
     {
         printf("%fms\t ", temps(algorithme5,longeur_7[i])*1000);
     }
+    printf("\npour les nombre premier longeur 8\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme5,longeur_8[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 9\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme5,longeur_9[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 10\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme5,longeur_10[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }printf("\npour les nombre premier longeur 11\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme5,longeur_11[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 12\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme5,longeur_12[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 13\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme5,longeur_13[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 14\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme5,longeur_14[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 15\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme5,longeur_15[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 16\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme5,longeur_16[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
         printf("\n");
 }
 
 /*le temps pour algo 6 avec 20 nombre de longeurs de 1-2 jusqu"à 16 */
 void mesurer_le_temps_algo6()
 {
-    printf("l'algorithme 6:\n");
+    printf("\nl'algorithme 6:\n");
     printf("\npour les nombres premier longeur 1 et 2\n");
     for (int  i = 0; i < 20; i++)
     {
@@ -327,6 +593,59 @@ void mesurer_le_temps_algo6()
     for (int  i = 0; i < 20; i++)
     {
         printf("%fms\t ", temps(algorithme6,longeur_7[i])*1000);
+    }
+    printf("\npour les nombre premier longeur 8\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme6,longeur_8[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 9\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme6,longeur_9[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 10\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme6,longeur_10[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }printf("\npour les nombre premier longeur 11\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme6,longeur_11[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 12\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme6,longeur_12[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 13\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme6,longeur_13[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 14\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme6,longeur_14[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 15\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme6,longeur_15[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
+    }
+    printf("\npour les nombre premier longeur 16\n");
+    for (int  i = 0; i < 20; i++)
+    {
+        printf("%fms\t ", temps(algorithme6,longeur_16[i])*1000);
+        //printf("%ld\n",longeur_7[0]);
     }
     printf("\n");       
 }
