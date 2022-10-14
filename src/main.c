@@ -3,7 +3,12 @@
 #include "temps_exec.h"
 
 int main()
-{     
+{     //jsut to test 
+
+
+
+
+
    //mesurer_le_temps_algo1();
 
   //mesurer_le_temps_algo2();
@@ -15,6 +20,15 @@ int main()
    //mesurer_le_temps_algo5();
    
    //mesurer_le_temps_algo6();
+
+   double** vect = question_1();
+   for (int i = 0; i < 6; i++)
+   {
+      for (int j = 0; j <6; j++)
+         printf("%f  ",vect[i][j]);
+   }
+   
+   printf("---------------");
    /**************************** Question 3 **************************/
    double ** moys =  moy_temps_d_exec();
    printf("nombres algo1\talgo2\talgo3\talgo4\talgo5\talgo\t\n");

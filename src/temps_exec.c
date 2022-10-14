@@ -62,10 +62,14 @@ long int longeur_16[]={
 1111235916285193, 1181118711931201, 1208152477719361, 1235711131175321, 1238926361552897, 1255571292290713, 1301477951890177, 1311753223571113, 1311870831664661, 1333333333333333, 1379131521253133, 1391098979592919, 1423214346574567, 1510553619999637, 1593350922240001, 1609161918110111, 1616668118999191, 1657688103077659, 1680588011350901, 1693182318746371, 
 };
 long int tab[] = {104459, 1034233,10000019,253555759,1028910301,98765421103,113391385603};
+long int tab2[] ={23,197,4817,17393,104459,1034233};
 //there is no  standred c data type to store such a bi number number 
 /*long long longeur_20[]={
     10089886811898868001,10092003300140014003,10093100991010310111,10141516181932277123,10611063106910871091,10691097123712491259,10911097110311091151,11111111111111111011,11111313171722335577,11138479445180240497,11976506590973322187,11281963036964038421,12345678901234567891,12345678910987654321,12797382490434158663,12904149405941903143,13080048459073205527,13169525310647365859,13315146811210211749,13337777797999979999,
 };*/
+
+
+
 
 /*Une fonction pour calculer le temps de n'importe quel algo */
 double temps(long int (*f)(long int),long int valeur)
@@ -81,6 +85,34 @@ double temps(long int (*f)(long int),long int valeur)
     
     return (double) (t2-t1)/CLOCKS_PER_SEC ;
 }
+
+
+
+/******************************   Partie 02 question 01       *****************************/
+double ** question_1()
+{
+    double** vec = (double**) malloc(sizeof(double*)*6);
+        for (int i = 0; i < 6; i++)
+        {
+            vec[i] =(double*)malloc(sizeof(double)*6);
+
+        }
+    
+    for (int i=0; i<6; i++)
+    {
+       vec[0][i] = temps(algorithme1,tab2[i]);
+        vec[1][i] = temps(algorithme2,tab2[i]);
+       vec[2][i] = temps(algorithme3,tab2[i]);
+        vec[0][i] = temps(algorithme4,tab2[i]);
+        vec[1][i] = temps(algorithme5,tab2[i]);
+        vec[2][i] = temps(algorithme6,tab2[i]);
+        
+    }
+    return vec;
+}
+
+
+
 /*
     Les fonctions du partie 2 question 2
     calculer  le temps de traitement de 20 nombre pour chaque longeur on utilisant les 6 algo

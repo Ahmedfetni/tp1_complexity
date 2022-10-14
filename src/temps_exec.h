@@ -3,6 +3,8 @@
 
 double temps(long int (*f)(long int),long int valeur);
 
+
+double ** question_1();
 void mesurer_le_temps_algo1();
 
 void mesurer_le_temps_algo2();
