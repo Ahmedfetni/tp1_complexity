@@ -75,7 +75,7 @@ double temps(long int (*f)(long int),long int valeur)
     
     t1 = clock();
     
-    (*f)(valeur);
+    (*f)(valeur);// appel
     
     t2 = clock();
     

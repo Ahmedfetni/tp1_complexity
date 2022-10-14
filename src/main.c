@@ -15,8 +15,9 @@ int main()
    //mesurer_le_temps_algo5();
    
    //mesurer_le_temps_algo6();
+   /**************************** Question 3 **************************/
    double ** moys =  moy_temps_d_exec();
-   printf("nombres algo1\talgo2\talgo3\talgo4\talgo5\talgo\t");
+   printf("nombres algo1\talgo2\talgo3\talgo4\talgo5\talgo\t\n");
    for (int i = 0; i < 6; i++)
    {
       
