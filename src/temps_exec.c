@@ -61,11 +61,13 @@ long int longeur_15[] ={
 long int longeur_16[]={
 1111235916285193, 1181118711931201, 1208152477719361, 1235711131175321, 1238926361552897, 1255571292290713, 1301477951890177, 1311753223571113, 1311870831664661, 1333333333333333, 1379131521253133, 1391098979592919, 1423214346574567, 1510553619999637, 1593350922240001, 1609161918110111, 1616668118999191, 1657688103077659, 1680588011350901, 1693182318746371, 
 };
+long int tab[] = {104459, 1034233,10000019,253555759,1028910301,98765421103,113391385603};
 //there is no  standred c data type to store such a bi number number 
 /*long long longeur_20[]={
     10089886811898868001,10092003300140014003,10093100991010310111,10141516181932277123,10611063106910871091,10691097123712491259,10911097110311091151,11111111111111111011,11111313171722335577,11138479445180240497,11976506590973322187,11281963036964038421,12345678901234567891,12345678910987654321,12797382490434158663,12904149405941903143,13080048459073205527,13169525310647365859,13315146811210211749,13337777797999979999,
 };*/
 
+/*Une fonction pour calculer le temps de n'importe quel algo */
 double temps(long int (*f)(long int),long int valeur)
 {
     
@@ -79,7 +81,12 @@ double temps(long int (*f)(long int),long int valeur)
     
     return (double) (t2-t1)/CLOCKS_PER_SEC ;
 }
+/*
+    Les fonctions du partie 2 question 2
+    calculer  le temps de traitement de 20 nombre pour chaque longeur on utilisant les 6 algo
+***************************************************************************
 
+*/
 /*le temps pour algo 1  avec 20 nombre de longeurs de 1-2 jusqu"à 16  */
 void mesurer_le_temps_algo1()
 {
@@ -648,4 +655,122 @@ void mesurer_le_temps_algo6()
         //printf("%ld\n",longeur_7[0]);
     }
     printf("\n");       
+}
+/*
+    partie 2  question 3 Pour des longueurs différentes de nombres, allant de 6 à 12, exécuter les 6
+    programmes 50 fois pour calculerla moyenne du temps d’exécution. 
+    ************************************************************************************************
+
+*/
+
+double** moy_temps_d_exec()
+{
+        double** moyennnes = (double**) malloc(sizeof(double*)*6);
+        for (int i = 0; i < 6; i++)
+        {
+            moyennnes[i] =(double*)malloc(sizeof(double)*6);
+
+        }
+         double moy1 =  0 ;
+         double moy2 =  0 ;
+         double moy3 =  0 ;
+         double moy4 =  0 ;
+         double moy5 =  0 ;
+         double moy6 =  0 ;
+        int j = 0;
+        for ( j; j < 3; j++)
+        {
+             moy1 =  0 ;
+             moy2 =  0 ;
+             moy3 =  0 ;
+             moy4 =  0 ;
+             moy5 =  0 ;
+             moy6 =  0 ;
+            for (int i = 0; i < 50; i++)
+            {
+                moy1 +=temps(algorithme1,tab[j]);
+                moy2 +=temps(algorithme2,tab[j]);
+                moy3 +=temps(algorithme3,tab[j]);
+                moy4 +=temps(algorithme4,tab[j]);
+                moy5 +=temps(algorithme5,tab[j]);
+                moy6 +=temps(algorithme6,tab[j]);
+                
+            }
+            moyennnes[0][j]= moy1/50;
+            moyennnes[1][j]= moy2/50;
+            moyennnes[2][j]= moy3/50;
+            moyennnes[3][j]= moy4/50;
+            moyennnes[4][j]= moy5/50;
+            moyennnes[5][j]= moy6/50;
+        }
+            /*   -------------- j = 3 --------------   */
+            moy2 =  0 ;
+            moy3 =  0 ;
+            moy4 =  0 ;
+            moy5 =  0 ;
+            moy6 =  0 ;
+            for (int i = 0; i < 50; i++)
+            {   
+                moy2 +=temps(algorithme2,tab[j]);
+                moy3 +=temps(algorithme3,tab[j]);
+                moy4 +=temps(algorithme4,tab[j]);
+                moy5 +=temps( algorithme5,tab[j]);
+                moy6 +=temps( algorithme6,tab[j]);
+                
+            }
+            moyennnes[0][j]= -1;
+            moyennnes[1][j]= -1;
+            moyennnes[2][j]= moy3/50;
+            moyennnes[3][j]= moy4/50;
+            moyennnes[4][j]= moy5/50;
+            moyennnes[5][j]= moy6/50;
+
+
+            //moy2 =  0 ;
+            //moy3 =  0 ;
+            
+                            /*   -------------- j = 4 --------------   */
+            j++;
+            
+            moy4 =  0 ;
+            moy5 =  0 ;
+            moy6 =  0 ;
+            for (int i = 0; i < 50; i++)
+            {   
+                //moy2 +=temps(algorithme2,tab[j]);
+                //moy3 +=temps(algorithme3,tab[j]);
+                moy4 +=temps(algorithme4,tab[j]);
+                moy5 +=temps( algorithme5,tab[j]);
+                moy6 +=temps( algorithme6,tab[j]);
+                
+            }
+            moyennnes[0][j]= -1;
+            moyennnes[1][j]= -1;
+            moyennnes[2][j]= -1;
+            moyennnes[3][j]= moy4/50;
+            moyennnes[4][j]= moy5/50;
+            moyennnes[5][j]= moy6/50;
+
+        for ( j = 5; j < 6; j++)
+        {
+            
+            moy4 =  0 ;
+            moy5 =  0 ;
+            moy6 =  0 ;
+            for (int i = 0; i < 50; i++)
+            {
+                //moy4 +=temps(algorithme4,tab[j]);
+                moy5 +=temps( algorithme5,tab[j]);
+                moy6 +=temps( algorithme6,tab[j]);
+                
+            }
+            moyennnes[0][j]= -1;
+            moyennnes[1][j]= -1;
+            moyennnes[2][j]= -1;
+            moyennnes[3][j]= -1;//moy4/50;
+            moyennnes[4][j]= moy5/50;
+            moyennnes[5][j]= moy6/50;
+        }
+        
+        return moyennnes;
 }

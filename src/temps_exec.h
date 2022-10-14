@@ -15,4 +15,6 @@ void mesurer_le_temps_algo5();
 
 void mesurer_le_temps_algo6();
 
+double** moy_temps_d_exec();
+
 #endif
